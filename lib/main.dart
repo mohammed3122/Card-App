@@ -9,15 +9,15 @@ class LoginApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xff2c8997),
+        backgroundColor: const Color(0xff2c8997),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 102,
                 backgroundColor: Colors.white,
                 child: CircleAvatar(
@@ -26,7 +26,7 @@ class LoginApp extends StatelessWidget {
                       AssetImage('images/IMG_20240817_151115_146.jpg'),
                 ),
               ),
-              Text(
+              const Text(
                 'Mohammad Awd',
                 style: TextStyle(
                   color: Colors.white,
@@ -34,7 +34,7 @@ class LoginApp extends StatelessWidget {
                   fontFamily: 'Pacifico',
                 ),
               ),
-              Text(
+              const Text(
                 'Flutter Developer',
                 style: TextStyle(
                   fontSize: 20,
@@ -43,14 +43,14 @@ class LoginApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Divider(
+              const Divider(
                 thickness: 0.5,
                 color: Colors.white,
                 indent: 30,
                 endIndent: 30,
               ),
-              Card(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              const Card(
+                margin: EdgeInsets.symmetric(horizontal: 20),
                 color: Colors.white,
                 child: ListTile(
                   leading: Icon(
@@ -60,7 +60,7 @@ class LoginApp extends StatelessWidget {
                   title: Text('(+20) 128818468'),
                 ),
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 color: Colors.white,
                 child: ListTile(
@@ -69,6 +69,23 @@ class LoginApp extends StatelessWidget {
                     color: Color(0xff2c8997),
                   ),
                   title: Text('mahometawad@gmail.com'),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child:const Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
                 ),
               )
             ],
